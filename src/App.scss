@@ -1,0 +1,859 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background: #060610 !important;
+}
+.btn-outline-success {
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  padding: 10px !important;
+}
+
+/////////////////////////////////// TOOGLER ICON COLOR CHANGE COLOR //////////////////////////
+
+.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none !important;
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+  transition: all 300ms linear;
+}
+.navbar .navbar-toggler-icon:after,
+.navbar-toggler-icon:before {
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
+}
+.navbar .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(45deg) !important;
+}
+.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg) !important;
+}
+.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent !important;
+}
+.navbar-toggler {
+  background-color: rgb(52 196 57) !important;
+  padding: 10px !important;
+}
+
+.offcanvas {
+  backdrop-filter: blur(10px) !important;
+  background-color: #00000080 !important;
+}
+
+/////////////////////////// HEADER SECTION ////////////////////////////////////////
+
+.Header-section {
+  padding: 16px 0;
+  background: #060610;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  .navbar-brand img {
+    width: 100%;
+    max-width: 170px;
+  }
+
+  ul {
+    li {
+      margin: 0 15px 0 0;
+      a {
+        font-weight: 600;
+        &:hover {
+          color: #00ff35 !important;
+        }
+      }
+    }
+  }
+  .btn-outline-success,
+  .btn-outline-danger {
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+  }
+}
+
+//////////////////////////// HERO SECTION ///////////////////////////////////
+
+.Hero-section {
+  background: #060610 !important;
+  h1 {
+    font-size: 62px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Outfit;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: Outfit;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+}
+.modal-content {
+  background: transparent !important;
+}
+.btn-close {
+  color: #ffffff;
+  background: transparent url(../public/assets/close.svg) center/1em auto
+    no-repeat !important;
+}
+
+////////////////////////////   Generative Age  Section/////////////////////////////
+
+.GenerativeAge-section {
+  .bg-content {
+    background: #13111a;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    box-shadow: 0 0 20px #00ff35;
+    padding: 50px 40px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      color: #ffffff;
+      font-family: Outfit;
+    }
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 28px;
+      color: #d8d8d8;
+      padding: 0 15px 0 0;
+      font-weight: 400;
+      font-family: Inter;
+    }
+  }
+}
+
+/////////////////////////////// CharacterGPT section /////////////////////
+
+.CharacterGPT-section {
+  .GPT-content {
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+      color: #ffffff;
+      margin-bottom: 0px;
+      font-family: Outfit;
+    }
+    h4 {
+      font-size: 34px;
+      line-height: 42px;
+      color: #00ff35;
+      font-family: Outfit;
+    }
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 28px;
+      color: #d8d8d8;
+      padding: 0 15px 0 0;
+      font-weight: 400;
+      font-family: Inter;
+    }
+
+    .btn-outline-success {
+      font-weight: 700;
+      height: 46px;
+    }
+  }
+
+  .react-multi-carousel-item {
+    background: #1d1a27;
+    border-radius: 22px;
+    height: 450px;
+    overflow: hidden;
+    p {
+      margin-bottom: 0px;
+      min-height: 60px;
+      font-size: 20px;
+      margin: 30px 0 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .react-multi-carousel-dot-list {
+    padding: 20px 0px;
+  }
+}
+
+////////////////////////// Carousel  section /////////////////////////
+
+.Carousel-section {
+  h2 {
+    color: #00ff35;
+    font-family: Outfit;
+  }
+  .bg-carousel-content {
+    background: #8cdd9c;
+    box-shadow: 0 5px 14px #00ff35;
+    border-radius: 18px;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    img {
+      height: 150px;
+      width: 150px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+    p {
+      font-family: Outfit;
+      font-weight: 600;
+      color: #ffffff;
+      font-style: normal;
+      text-align: center;
+    }
+  }
+}
+
+///////////////////////////// TryCharacterGpt section  /////////////////////////
+
+.TryCharacterGpt-section {
+  .bg-trycharacter-gpt {
+    background: #1d1a27;
+    border: 1px solid #00ff35;
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  h1 {
+    color: #00ff35;
+    font-family: Outfit;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+}
+
+//////////////////////////  AletheaAi section  //////////////////////
+
+.AletheaAi-section {
+  .heading-small {
+    color: #00ff35;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+
+  .card {
+    border-radius: 18px;
+    padding: 30px 10px 25px 0px;
+    background: #1d1a27;
+    box-shadow: 0 5px 14px rgb(0 0 0 / 10%);
+    height: auto;
+    min-height: 100%;
+
+    .card-title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: Outfit;
+    }
+
+    .card-text {
+      font-weight: 400;
+      line-height: 24px;
+      opacity: 0.8;
+      font-size: 16px;
+      text-align: center;
+      padding: 0px;
+      font-family: Inter;
+    }
+    .btn-learn {
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 40px;
+      line-height: 30px;
+      padding: 5px 20px;
+    }
+  }
+}
+
+/////////////////////////////////  Tokenizing Ai  ///////////////////////////////
+
+.TokenizingAi-section {
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: Outfit;
+  }
+  .card {
+    padding: 30px 10px 25px 0px;
+    background: transparent;
+    height: auto;
+    min-height: 100%;
+
+    .card-title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: Outfit;
+    }
+    .card-text {
+      font-weight: 400;
+      line-height: 24px;
+      opacity: 0.8;
+      font-size: 16px;
+      text-align: center;
+      padding: 0px;
+      color: #d8d8d8;
+      font-family: Inter;
+    }
+  }
+}
+
+/////////////////////////////////////// AI Protocol /////////////////
+
+.AiProtocole-section {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: Outfit;
+  }
+  h4 {
+    font-size: 34px;
+    line-height: 42px;
+    color: #00ff35;
+    font-family: Outfit;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+
+  .btn-outline-success {
+    font-weight: 700;
+    height: 46px;
+  }
+  .react-multi-carousel-item {
+    background: #1d1a27;
+    border-radius: 22px;
+    height: 450px;
+    overflow: hidden;
+    p {
+      margin-bottom: 0px;
+      min-height: 60px;
+      font-size: 20px;
+      margin: 30px 0 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .react-multi-carousel-dot-list {
+    padding: 20px 0px;
+    .react-multi-carousel-dot button:hover:active {
+      background: #00ff35 !important;
+    }
+  }
+}
+
+////////////////////////////// UtilityToken section //////////////////
+
+.UtilityToken-section {
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+
+  .card {
+    border-radius: 18px;
+    background: #1d1a27;
+    box-shadow: 0 5px 14px rgb(0 0 0 / 10%);
+    height: auto;
+    min-height: 100%;
+
+    .card-title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: Outfit;
+    }
+
+    .card-text {
+      font-weight: 400;
+      line-height: 24px;
+      opacity: 0.8;
+      font-size: 16px;
+      text-align: center;
+      padding: 0px;
+      font-family: Inter;
+    }
+  }
+}
+
+//////////////////// Stay Connect ////////////////////
+
+.SatyConnect-section {
+  .bg-stay-connect {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    background: #13111a;
+    border-radius: 22px;
+    // border: 1px solid #1d1a27;
+    box-shadow: 0 0 20px #00ff35;
+    h2 {
+      font-family: Outfit;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      align-items: center;
+      color: #fff;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140.02%;
+      color: #fff;
+      margin: 0;
+      font-family: Inter;
+    }
+    .stay-input {
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 8px;
+      display: flex;
+      padding: 4px;
+      width: 100%;
+      max-width: 550px;
+      float: right;
+      justify-content: end;
+    }
+  }
+}
+
+////////////////////////////////////  Footer Section ///////////////////////////////
+
+.Footer-section {
+  .logo {
+    img {
+      width: 100%;
+      max-width: 170px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: Outfit;
+    color: #ffffff;
+  }
+  p {
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 20px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+
+  .menu-items {
+    a {
+      text-decoration: none;
+      color: #d8d8d8;
+      font-size: 16px;
+      opacity: 0.8;
+      font-weight: 400;
+      font-family: Inter;
+    }
+  }
+
+  .social-icons {
+    a {
+      text-decoration: none;
+      font-family: Inter;
+    }
+  }
+
+  .border-top {
+    background: #00ff35;
+    height: 1px;
+    width: 100%;
+  }
+}
+
+/////////////////////////////   MEDIA QUERRY //////////////////////////////
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+    margin-bottom: 10px !important;
+  }
+
+  h2 {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+    margin-bottom: 10px !important;
+  }
+
+  h4 {
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .bg-slick-slider {
+    img {
+      width: 300px;
+    }
+  }
+
+  .react-multi-carousel-item {
+    width: 320px !important;
+    height: 320px !important;
+    img {
+      width: 320px !important;
+    }
+  }
+
+  .SatyConnect-section .bg-stay-connect {
+    padding: 24px;
+  }
+
+  .btn-outline-success,
+  .btn-outline-danger {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 8px !important;
+  }
+
+  .Protocol-hero-section {
+    h3 {
+      font-weight: 600 !important;
+      font-size: 38px !important;
+      line-height: 48px !important;
+    }
+  }
+  .Contact-section p {
+    padding: 0px !important;
+  }
+}
+
+///////////////////////////////////////////////////////////////   Protocol Ai Page //////////////////
+
+.Protocol-hero-section {
+  h3 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+    color: #ffffff;
+    font-family: Outfit;
+  }
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #d8d8d8;
+    width: 100%;
+    max-width: 550px;
+    opacity: 0.8;
+  }
+
+  img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+/////////////////////// Feature of Protocol /////////////
+
+.FeatureOfProtocol-section {
+  text-align: center;
+  .carts {
+    p {
+      color: #ffffff !important;
+      line-height: 28px !important;
+      opacity: 8;
+    }
+  }
+  h2 {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #d8d8d8;
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+////////////////////////// PRotocol Utalize Section ///////////
+
+.Protocol-utalize-section {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: Outfit;
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 42px;
+    color: #00ff35;
+    font-family: Outfit;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 28px;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+
+  .btn-outline-success {
+    margin-top: 10px;
+    font-weight: 700;
+    height: 46px;
+    background: #f5f4fa !important;
+    color: #000 !important;
+    &:hover {
+      background-color: #00ff35 !important;
+      color: #ffffff !important;
+    }
+  }
+
+  .react-multi-carousel-item {
+    background: #1d1a27;
+    border-radius: 22px;
+    height: 450px;
+    overflow: hidden;
+    p {
+      margin-bottom: 0px;
+      min-height: 60px;
+      font-size: 20px;
+      margin: 30px 0 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .react-multi-carousel-dot-list {
+    padding: 20px 0px;
+  }
+}
+
+////////////////////////// Protocol-AiProtocol-section ///////////////////
+
+.Protocol-AiProtocol-section {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: Outfit;
+    margin-bottom: 30px;
+    text-align: center;
+    span {
+      color: #00ff35;
+    }
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.8;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+    text-align: center;
+  }
+
+  .bg-img {
+    content: "";
+    background: url(../public/assets/protocol/broderDivider.svg) 0 0/100%
+      no-repeat;
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 90px);
+    left: 0;
+    height: 117px;
+    right: 0;
+    z-index: -1;
+  }
+  video {
+    height: 230px;
+    border-radius: 14px;
+    margin: auto;
+    display: block;
+  }
+}
+
+///////////////////// Contact Form   //////////////////////
+
+.Contact-section {
+  h1 {
+    font-size: 62px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Outfit;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+    text-align: center;
+    padding: 0px 220px;
+  }
+  .Contact-Form {
+    margin-top: 80px;
+    margin: auto;
+    max-width: 650px;
+    padding: 35px;
+    box-shadow: 0 0 25px #00ff35;
+    background: #13111a;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+
+    .form-label {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #d9d7e6;
+      font-family: Outfit;
+    }
+    .form-control,
+    .form-select {
+      background: #302c3f;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      height: 48px;
+      color: #fff !important;
+    }
+    textarea {
+      height: 120px !important;
+    }
+  }
+}
+
+
+/////////////////////////////////// DApps-hero-section  ////////////////////////////
+
+.DApps-hero-section{
+  h1 {
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Outfit;
+    text-align: center;
+  }
+  .header-text{
+    padding: 0px 110px;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    opacity: 0.8;
+    color: #d8d8d8;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+    font-family: Inter;
+  }
+  h2 {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+///////////////  Feature character //
+.TryCharacterGpt-section{
+  h4 {
+    font-size: 22px;
+    line-height: 42px;
+    color: #00ff35;
+    font-family: Outfit;
+    color: #fff;
+  }
+}
